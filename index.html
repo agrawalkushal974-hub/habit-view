@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Monthly Habit Tracker</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Habit Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>Habit Tracker – February 2026</h1>
-  </header>
+<header>
+  <h1>Monthly Habit Tracker</h1>
+  <p id="monthYear"></p>
+</header>
 
-  <section id="overview">
-    <div class="card">Completed: <span id="completed">0</span></div>
-    <div class="card">Goal: <span id="goal">0</span></div>
-    <div class="card">Left: <span id="left">0</span></div>
-  </section>
+<section class="overview">
+  <div class="box">
+    <h3>Completed</h3>
+    <span id="completed">0</span>
+  </div>
+  <div class="box">
+    <h3>Goal</h3>
+    <span id="goal">0</span>
+  </div>
+  <div class="box">
+    <h3>Left</h3>
+    <span id="left">0</span>
+  </div>
+</section>
 
-  <section id="habits">
-    <h2>Daily Habits</h2>
-    <div id="habit-list"></div>
-  </section>
+<section class="calendar">
+  <div class="days">
+    <span>Sun</span><span>Mon</span><span>Tue</span>
+    <span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+  </div>
+  <div id="dates"></div>
+</section>
 
-  <script src="script.js"></script>
+<section class="habits">
+  <h2>Habits</h2>
+  <div id="habitList"></div>
+</section>
+
+<script src="./script.js"></script>
 </body>
 </html>
